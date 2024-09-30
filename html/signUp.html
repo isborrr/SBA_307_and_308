@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Rental Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            width:fit-content;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding: 2rem;
+            border: 2px solid rgb(247, 246, 246);
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+            font-family: "Croissant One", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 2.2rem;
+            background:
+            linear-gradient(#1B4D3E 0%, #2a2726 50%);
+            background-blend-mode: screen, difference, lighten;
+            color: white;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .submi{
+            margin: 0.2rem;
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content:center ;
+            gap:4rem;
+            padding: 20px;
+            backdrop-filter: blur(13px);
+            color: white;
+            text-align: center;
+
+            margin: auto;
+            top: 4rem;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Sign Up for Apartment Rental or Services</h2>
+    <form id="signupForm" action="/submit" method="POST">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required pattern="^[a-zA-Z\s]+$" title="Please enter a valid name. Only letters and spaces are allowed.">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required title="Please enter a valid email address.">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="^\+?[0-9]{10,15}$" title="Please enter a valid phone number.">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long and contain both letters and numbers.">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required title="Please enter your date of birth.">
+
+        <label for="rentalType">Type of Rental:</label>
+        <select id="rentalType" name="rentalType" required>
+            <option value="">Select...</option>
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="studio">Studio</option>
+        </select>
+        <div class="submi">
+            <input id="sinUp" type="submit" value="Sign Up">
+        </div>
+        <style>
+           #sinUp{
+                background-color: #5f42de;
+                color: white;
+                padding: 15px 30px;
+                border: none;
+                border-radius: 5px;
+                font-size: 25px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                overflow: hidden;
+                font-family: "Croissant One", serif;
+                font-weight: 400;
+                font-style: normal;
+                }
+
+            #sinUp:hover  {
+                background-color: #3f20cb7b;
+                border: 3px solid gold;
+                }
+            #sinUp:active {
+                 border: 3px solid gold;
+            }
+        </style>
+    </form>
+
+    <script>
+        document.getElementById("signupForm").onsubmit = function() {
+            alert("Form submitted successfully!");
+        };
+    </script>
+</body>
+</html>

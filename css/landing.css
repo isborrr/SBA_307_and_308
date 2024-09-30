@@ -1,0 +1,334 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    text-decoration: dotted;
+
+    width: 100%;
+
+    padding: 10px;
+
+}
+
+.logo{
+    height: fit-content;
+    padding: 0.5rem;
+    background-color: black;
+
+}
+
+#sinIn-btn, #company-logo{
+
+    margin-right: 1rem;
+    margin: 0.5rem;
+}
+.header , .btn, .footer{
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    filter: brightness(140%);
+}
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+h1{
+    width:fit-content;
+    margin: auto;
+    margin-top: 0;
+    padding: 2rem;
+    border: 2px solid rgb(247, 246, 246);
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    font-family: "Croissant One", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.2rem;
+    background:
+    linear-gradient(#1B4D3E 0%, #2a2726 50%);
+    background-blend-mode: screen, difference, lighten;
+
+}
+
+.main-boby{
+    padding: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    background-image: url('../landingImages/\ background-image.png');
+    background-size: cover;
+    background-position: center;
+
+
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    filter: brightness(140%);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+li, .company-description{
+    list-style: none;
+    width:fit-content;
+    margin: auto;
+    margin-top: 1%;
+    padding: 2rem;
+    border: 2px solid rgb(92, 88, 88);
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    font-family: "Croissant One", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    background:
+    linear-gradient(#1B4D3E 0%, #2a2726 50%);
+    background-blend-mode: screen, difference, lighten;
+    margin-bottom: 0;
+}
+
+li{
+    width:40%;
+    position: relative;
+
+}
+
+
+.playwrite-de-grund-bold {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    gap:4rem;
+
+    padding: 20px;
+    backdrop-filter: blur(13px);
+    color: white;
+    text-align: center;
+
+    margin: auto;
+    top: 4rem;
+
+}
+
+#rentBt , #serviceBt, #sinIn-btn{
+    background-color: #241b4d;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: "Croissant One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#rentBt::before , #serviceBt::before, #sinIn-btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+#sinIn-btn:hover ,#rentBt:hover , #serviceBt:hover {
+    box-shadow: 0 0 20px #D2B48C, 0 0 30px rgba(11, 184, 75, 0.8);
+}
+#rentBt:active , #serviceBt:active , #sinIn-btn:active{
+    border: 3px solid gold;
+}
+
+.footer{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    gap: 5%;
+    width: 100%;
+    bottom: 0;
+    background-color:  #000000;
+    color: #fff;
+    padding: 10px;
+}
+
+.socialMediaIcon{
+    width: 40px;
+    margin-bottom: 0.4rem;
+    border: 2px solid transparent;
+    border-radius: 50%;
+
+}
+.socialMedia{
+    margin-top: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia:hover{
+    .socialMediaIcon{
+    box-shadow: 0 0 20px #ffffff, 0 0 30px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgb(247, 246, 246);
+    }
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1071px) {
+
+    h1{
+        width:fit-content;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        border: 2px solid rgb(247, 246, 246);
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+        font-family: "Croissant One", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.2rem;
+        background:
+        linear-gradient(#1B4D3E 0%, #2a2726 50%);
+        background-blend-mode: screen, difference, lighten;
+
+    }
+
+    li, .company-description{
+        list-style: none;
+        width:fit-content;
+        margin: auto;
+        margin-top: 1%;
+        padding: 2rem;
+        border: 2px solid rgb(92, 88, 88);
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+        font-family: "Croissant One", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1.5rem;
+        text-align: center;
+        background:
+        linear-gradient(#1B4D3E 0%, #2a2726 50%);
+        background-blend-mode: screen, difference, lighten;
+        margin-bottom: 0;
+    }
+
+    li{
+        width:60%;
+        position: relative;
+
+    }
+    ul{
+        gap: 25px;
+    }
+}
+
+/* For small screens (1 item per row) */
+@media (max-width: 620px) {
+
+    h1{
+        width:80%;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        border: 2px solid rgb(247, 246, 246);
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+        font-family: "Croissant One", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.8rem;
+        background:
+        linear-gradient(#1B4D3E 0%, #2a2726 50%);
+        background-blend-mode: screen, difference, lighten;
+
+    }
+
+    .company-description{}
+    li {
+        list-style: none;
+        width:90%;
+        margin: auto;
+        margin-top: 1%;
+        padding: 2rem;
+        border: 2px solid rgb(92, 88, 88);
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+        font-family: "Croissant One", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1.5rem;
+        text-align: center;
+        background:
+        linear-gradient(#1B4D3E 0%, #2a2726 50%);
+        background-blend-mode: screen, difference, lighten;
+        margin-bottom: 0;
+    }
+
+    li{
+        width:70%;
+        position: relative;
+        margin: auto;
+    }
+    ul{
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 513px) {
+
+    .btn{
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+    }
+    .rentBt, .serviceBt{
+
+      font-size: 2px;
+    }
+    .footer{
+        display: none;
+    }
+
+}

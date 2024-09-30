@@ -1,0 +1,351 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.background {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(15px);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5),
+                0 0 100px rgba(255, 255, 255, 0.3);
+
+
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.5) 85%, rgba(255, 255, 255, 1) 100%);
+                pointer-events: none;
+}
+
+.logo{
+    height: fit-content;
+    padding: 0.5rem;
+    background-color: black;
+
+}
+/* #company-logo{
+    margin: 0.1rem;
+    border-radius: 50%;
+    width: 130px;
+    height: 60px;
+} */
+.header , .main, .footer{
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    filter: brightness(100%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    text-decoration: dotted;
+}
+
+.header-text{
+    text-align: center;
+    color: #000000;
+}
+h1{
+    width:fit-content;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border: 2px solid rgb(247, 246, 246);
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    font-family: "Croissant One", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.2rem;
+    background:
+    linear-gradient(#1B4D3E 0%, #2a2726 50%);
+    background-blend-mode: screen, difference, lighten;
+    color: white;
+}
+
+#Head_text{
+    width: 60%;
+    background-color: #5f42de;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 5px transparent;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.serviceContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px #ffffff, 0 0 30px rgba(0, 0, 0, 0.8);
+    border: 3px solid rgb(98, 94, 94);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 20px solid transparent;
+    position: relative;
+}
+
+.service:hover{
+    cursor: pointer;
+    border: 3px solid  #c8ff00;
+    transform: scale(1.1);
+}
+
+#service-img{
+    width: 380px;
+    height: 200px;
+}
+h2{
+    margin: 0;
+    border: 2px solid rgb(247, 246, 246);
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    font-family: "Croissant One", serif;
+    font-weight: 700;
+    font-style: normal;
+    background:
+    linear-gradient(#1B4D3E 0%, #2a2726 50%);
+    background-blend-mode: screen, difference, lighten;
+    color: white;
+
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.orderService{
+    display: none;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    background-color: #5f42de;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 5px transparent;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+
+}
+
+
+
+.orderService:hover  {
+    background-color: #3f20cb7b;
+    border: 3px solid gold;
+    }
+.orderService:active {
+     border: 3px solid gold;
+}
+
+
+
+
+
+.orderService:hover{
+
+    border: 3px solid gold;
+    cursor: pointer;
+}
+
+
+
+.orderService:active{
+    border: 3px solid gold;
+}
+
+p{
+    border: 2px solid transparent;
+}
+/* sevice Table */
+
+.ourPrices{
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 40%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #0adf78;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.price {
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    gap: 7%;
+    width: 100%;
+    bottom: 0;
+    background-color:  #000000;
+    color: #fff;
+    padding: 10px;
+    margin-top: 70px ;
+    border: 2px solid transparent;
+}
+
+.socialMediaIcon{
+    width: 40px;
+    margin-bottom: 0.4rem;
+    border: 5px solid transparent;
+    border-radius: 50%;
+}
+.socialMedia{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+}
+
+.socialMedia:hover{
+    .socialMediaIcon{
+    box-shadow: 0 0 20px #ffffff, 0 0 30px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgb(247, 246, 246);
+    }
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 513px) {
+    .footer{
+        display: none;
+    }
+
+}
+
+
+
+
+/* For medium screens (2 items per row) */
+@media (max-width: 1098px) {
+
+    .serviceContainer {
+        grid-template-columns: repeat(2, 1fr);
+        width: fit-content;
+        gap: 10px;
+
+
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .service {
+        transform: scale(0.87); /* Reduce each element to 90% */
+    }
+
+    table {
+        width: 70%;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+/* For small screens (1 item per row) */
+@media (max-width: 809px) {
+
+    .main {
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        width: 100%;
+    }
+    .serviceContainer {
+        grid-template-columns: 1fr;
+        width: fit-content;
+
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table{
+        width: 90%;
+    }
+}
